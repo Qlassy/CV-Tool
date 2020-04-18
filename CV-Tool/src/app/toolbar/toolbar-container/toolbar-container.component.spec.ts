@@ -4,8 +4,9 @@ import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
 import { ToolbarContainerComponent } from './toolbar-container.component';
+import { FillInPageComponent } from '../../pages/fill-in-page/fill-in-page.component';
 
-describe('ToolbarContainerComponent', () => {
+fdescribe('ToolbarContainerComponent', () => {
   let component: ToolbarContainerComponent;
   let fixture: ComponentFixture<ToolbarContainerComponent>;
 
@@ -24,5 +25,13 @@ describe('ToolbarContainerComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('ngOnInit() should set fillIn as the selected element', () => {
+    const fillIn = TestBed.get(FillInPageComponent);
+    component.fillIn = fillIn;
+    expect(component.selectedElement).toBeNull;
+    component.ngOnInit();
+    expect(component.selectedElement).toEqual(fillIn);
   });
 });

@@ -34,8 +34,10 @@ export class ToolbarContainerComponent implements OnInit {
   }
 
   selectElement(element: ToolbarElements) {
-    this.selectedElement = element;
-    this.cvSettings.isSelected = false;
+    if (element !== this.cvSettings) {
+      this.selectedElement = element;
+      this.cvSettings.isSelected = false;
+    }
   }
 
 }
