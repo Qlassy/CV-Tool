@@ -12,7 +12,7 @@ import { GallerieComponent } from '../../pages/gallerie/gallerie.component';
 import { CvSettingsComponent } from '../cv-settings/cv-settings.component';
 import { not } from '@angular/compiler/src/output/output_ast';
 
-fdescribe('ToolbarContainerComponent', () => {
+describe('ToolbarContainerComponent', () => {
   let component: ToolbarContainerComponent;
   let fixture: ComponentFixture<ToolbarContainerComponent>;
 

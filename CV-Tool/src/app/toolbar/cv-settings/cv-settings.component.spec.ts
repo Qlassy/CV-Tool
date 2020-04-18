@@ -25,4 +25,12 @@ describe('CvSettingsComponent', () => {
   it('should create', () => {
     expect(component).toBeTruthy();
   });
+
+  it('toggleSelected() should change isSelected value', () => {
+    component.isSelected = false; // could be set to true or false, it only needs to be initialized
+    const previousValue = component.isSelected;
+
+    component.toggleSelected();
+    expect(previousValue).not.toEqual(component.isSelected);
+  });
 });
