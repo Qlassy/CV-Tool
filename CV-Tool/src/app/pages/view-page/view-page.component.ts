@@ -1,4 +1,4 @@
-import { ToolbarElements } from './../../../models/toolbars-elements-interface/toolbar-elements';
+import { ToolbarElements } from '../../models/toolbars-elements-interface/toolbar-elements';
 import { Component, OnInit, Injectable } from '@angular/core';
 
 @Component({

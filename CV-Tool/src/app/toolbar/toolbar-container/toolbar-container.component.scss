@@ -1,10 +1,10 @@
 $selectedColor: rgb(0, 81, 255);
+$allignment: -29px;
 
 .container {
-    align-items: center;
     position: absolute;
     top: 15%;
-    left: 3px;
+    left: $allignment;
 }
 
 a:active, a:focus {
@@ -12,17 +12,28 @@ a:active, a:focus {
     border: none;
 }
 
+.bottom-container {
+    position: absolute;
+    bottom: 0;
+    left: $allignment;;
+}
+
 .mat-icon {
-    font-size: 350%;
+    font-size: 250%;
     color: white;
 }
 
 .mat-icon:hover {
     color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
 }
 
 .mat-icon:active {
     color: rgba(255, 255, 255, 0.2);
+}
+
+ul {
+    list-style-type: none;
 }
 
 .whitespace {

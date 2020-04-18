@@ -1,0 +1,51 @@
+<ul class="container">
+  <li>
+    <a (click)="this.selectElement(this.selector)" href="#" routerLink="/selector">
+      <mat-icon [ngClass]="{
+        selected: this.selectedElement === selector
+      }">{{this.selector.img}}</mat-icon>
+    </a>
+  </li>
+  <div class="whitespace"></div>
+  <li>
+    <a (click)="this.selectElement(this.fillIn)" href="#" routerLink="/fill-in">
+      <mat-icon [ngClass]="{
+        selected: this.selectedElement === fillIn
+      }">{{this.fillIn.img}}</mat-icon>
+    </a>
+  </li>
+  <div class="whitespace"></div>
+  <li>
+    <a (click)="this.selectElement(this.view)" href="#" routerLink="/view">
+      <mat-icon [ngClass]="{
+        selected: this.selectedElement === view
+      }">{{this.view.img}}</mat-icon>
+    </a>
+  </li>
+  <div class="whitespace"></div>
+  <li>
+    <a (click)="this.selectElement(this.gallerie)" href="#" routerLink="/gallerie">
+      <mat-icon [ngClass]="{
+        selected: this.selectedElement === gallerie
+      }">{{this.gallerie.img}}</mat-icon>
+    </a>
+  </li>
+</ul>
+<ul class="bottom-container">
+  <mat-icon 
+  (click)="this.cvSettings.toggleSelected()"
+  [ngClass]="{
+    selected: this.cvSettings.isSelected
+  }"
+  >
+  {{this.cvSettings.img}}
+  </mat-icon>
+  <div class="whitespace"></div>
+  <li>
+    <a (click)="this.selectElement(this.settings)" href="#" routerLink="/settings">
+      <mat-icon [ngClass]="{
+        selected: this.selectedElement === settings
+      }">{{this.settings.img}}</mat-icon>
+    </a>
+  </li>
+</ul>
