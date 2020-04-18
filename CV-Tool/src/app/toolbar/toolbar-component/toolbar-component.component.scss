@@ -1,0 +1,11 @@
+$toolbarWidth: 5.15%;
+$toolbarHeight: 100%;
+
+.toolbar {
+    position: absolute;
+    width: $toolbarWidth;
+    height: $toolbarHeight;
+    background-color: #2b2b2b;
+    top: 0;
+    left: 0;
+}

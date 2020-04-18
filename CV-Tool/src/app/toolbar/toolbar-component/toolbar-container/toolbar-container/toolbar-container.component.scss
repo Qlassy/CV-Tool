@@ -1,0 +1,38 @@
+$selectedColor: rgb(0, 81, 255);
+
+.container {
+    align-items: center;
+    position: absolute;
+    top: 15%;
+    left: 3px;
+}
+
+a:active, a:focus {
+    outline: 0;
+    border: none;
+}
+
+.mat-icon {
+    font-size: 350%;
+    color: white;
+}
+
+.mat-icon:hover {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.mat-icon:active {
+    color: rgba(255, 255, 255, 0.2);
+}
+
+.whitespace {
+    height: 1em;
+}
+
+.selected {
+    color: $selectedColor;
+}
+
+.selected:hover {
+    color: darken($color: $selectedColor, $amount: 10%);
+}

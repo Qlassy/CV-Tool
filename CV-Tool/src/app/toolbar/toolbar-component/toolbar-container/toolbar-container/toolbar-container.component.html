@@ -1,0 +1,17 @@
+<div class="container">
+  <li>
+    <a (click)="this.selectElement(this.fillIn)" href="#" routerLink="/fill-in">
+      <mat-icon [ngClass]="{
+        selected: this.selectedElement === fillIn
+      }">{{this.fillIn.img}}</mat-icon>
+    </a>
+  </li>
+  <div class="whitespace"></div>
+  <li>
+    <a (click)="this.selectElement(this.view)" href="#" routerLink="/view">
+      <mat-icon [ngClass]="{
+        selected: this.selectedElement === view
+      }">{{this.view.img}}</mat-icon>
+    </a>
+  </li>
+</div>
