@@ -1,4 +1,6 @@
 <div class="container">
   <app-toolbar-component></app-toolbar-component>
-  <router-outlet></router-outlet>
+  <div [ngStyle]="router"class="leftScreen">
+    <router-outlet></router-outlet>
+  </div>
 </div>
