@@ -10,7 +10,13 @@ export class ToolbarComponent implements OnInit {
 
   selectedElement: ToolbarElements;
 
-  constructor() { }
+  toolbarWidth: { width: string; }
+
+  constructor() {
+    this.toolbarWidth = {
+      'width': '66px'
+    }
+  }
 
   ngOnInit() {
   }
